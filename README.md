@@ -15,7 +15,7 @@ This method allows you for now to transform a JSON object/array into a Swift equ
 
 ## Example
 
-```
+```swift
 struct Content: Codable {
   let id: Int
   let content: String
@@ -43,7 +43,7 @@ func fetchContent(url: String = "https://api.example.com/get/content") async thr
 
 Then inside a button action for instance, in a SwiftUI view:
 
-```
+```swift
 ...
 Task {
   do {
