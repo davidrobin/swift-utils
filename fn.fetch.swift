@@ -10,9 +10,16 @@ enum fetchError: Error {
 }
 
 func fetch (
-  url: String, type: String, method: String = "GET", headers: [String: String] = [:], body: [String: Any] = [:]
+  url: String,
+  type: String,
+  method: String = "GET",
+  headers: [String: String] = [:],
+  body: [String: Any] = [:]
 ) async throws -> (
-  statusCode: Int, mimeType: String, type: String, data: Data
+  statusCode: Int,
+  mimeType: String,
+  type: String,
+  data: Data
 ) {
   
   let acceptedStatusCodes: ClosedRange = 200...299
