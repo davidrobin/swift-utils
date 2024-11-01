@@ -15,8 +15,8 @@ func fetch (
   statusCode: Int, mimeType: String, type: String, data: Data
 ) {
   
-  let acceptedStatusCodes: [Int] = [200, 201, 202]
-  let acceptedMethods: [String] = ["GET", "POST", "PUT", "PATCH", "DELETE"]
+  let acceptedStatusCodes: ClosedRange = 200...299
+  let acceptedMethods: [String] = ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "CONNECT", "OPTIONS", "TRACE"]
   let mimeTypes: [String: String] = [
     "text": "text/plain",
     "html": "text/html",
