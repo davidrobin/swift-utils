@@ -7,7 +7,7 @@ So far I've crafted two utils that I found useful to be (re)used in my projects.
 
 ### fetch
 
-As obvious its name is, `fetch` provides a method to retrieve content from a remote ressource
+As obvious its name is, `fetch` provides a method to retrieve content from a remote ressource, with any HTTP method that you might think of. You can eventually add optional headers to your request and a body if required, as a JSON object for now, the most common case nowadays.
 
 ### parse
 
