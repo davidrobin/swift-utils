@@ -1,6 +1,6 @@
 # swift-utils
 
-swift-utils aim to provide ready-to-use yet powerful functions to perform complex tasks such as fetch various content (text, HTML, JSON...) or parse exotic language objects (JSON) to be Swift-compliant.
+swift-utils aim to provide ready-to-use yet powerful Swift functions to perform complex tasks such as fetch various content (text, HTML, JSON...) or parse exotic language objects (JSON) to be Swift-compliant. Complexity abstracted, you can focus on fetch or parse your content without the hassle.
 
 ## Utils
 So far I've crafted two utils that I found useful to be (re)used in my projects.
@@ -11,7 +11,7 @@ As obvious its name is, `fetch` provides a method to retrieve content from a rem
 
 ### parse
 
-This method allows you for now to transform a JSON object/array into a Swift equivalent, ready to be used along you code.
+This method allows you for now to transform a JSON object/array into a Swift equivalent, ready to be used along you code. As a prerequisite, you must first define a Model to detail the content you will retrieve, provide it to the function when calling it.
 
 ## Example
 
